@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Africa
 //
-//  Created by Christopher J.  Roura on 9/30/20.
+//  Created by Christopher J. Roura on 9/30/20.
 //
 
 import SwiftUI
