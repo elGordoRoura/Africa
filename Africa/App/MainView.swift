@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var playing = false
+    
+    
     var body: some View {
         TabView {
             ContentView()
@@ -15,19 +18,19 @@ struct MainView: View {
                     Image(systemName: "square.grid.2x2")
                     Text("Browse")
                 }
-            
+
             VideoListView()
                 .tabItem {
                     Image(systemName: "play.rectangle")
                     Text("Watch")
                 }
-            
+
             MapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("locations")
                 }
-            
+
             GalleryView()
                 .tabItem {
                     Image(systemName: "photo")
