@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeadingView: View {
     // MARK: - PROPERTIES
+    
     var headingImage: String
     var headingText: String
     

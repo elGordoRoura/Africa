@@ -9,30 +9,36 @@ import SwiftUI
 
 struct MotionAnimationView: View {
     // MARK: - PROPERTIES
-    @State private var randomCircle = Int.random(in: 12 ... 16)
-    @State private var isAnimating: Bool = false
+    
+    @State private var randomCircle         = Int.random(in: 12 ... 16)
+    @State private var isAnimating: Bool    = false
     
     // MARK: - FUNCTIONS
+    
     
     // 1. Random Coordinate
     func randomCoordinate(max: CGFloat) -> CGFloat {
         return CGFloat.random(in: 0 ... max)
     }
     
+    
     // 2. Random Size
     func randomSize() -> CGFloat {
         return CGFloat(Int.random(in: 10 ... 300))
     }
+    
     
     // 3. Random Scale
     func randomScale() -> CGFloat {
         return CGFloat(Double.random(in: 0.1 ... 2.0))
     }
     
+    
     // 4. Random Speed
     func randomSpeed() -> Double {
         return Double.random(in: 0.025 ... 1.0)
     }
+    
     
     // 5. Random Delay
     func randomDelay() -> Double {

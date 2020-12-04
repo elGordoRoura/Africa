@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnimalDetailView: View {
     // MARK: - PROPERTIES
+    
     let animal: Animal
     
     
@@ -44,7 +45,8 @@ struct AnimalDetailView: View {
                 
                 // Gallery
                 Group {
-                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pitcures")
+                    HeadingView(headingImage: "photo.on.rectangle.angled",
+                                headingText: "Wilderness in Pitcures")
                     
                     InsetGalleryView(animal: animal)
                 } //: GROUP
@@ -52,7 +54,8 @@ struct AnimalDetailView: View {
                 
                 // Facts
                 Group {
-                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    HeadingView(headingImage: "questionmark.circle",
+                                headingText: "Did you know?")
                     
                     InsetFactView(animal: animal)
                 } //: GROUP
@@ -60,7 +63,8 @@ struct AnimalDetailView: View {
                 
                 // Description
                 Group {
-                    HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    HeadingView(headingImage: "info.circle",
+                                headingText: "All about \(animal.name)")
                     
                     Text(animal.description)
                         .multilineTextAlignment(.leading)
@@ -70,7 +74,8 @@ struct AnimalDetailView: View {
                 
                 // Map
                 Group {
-                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    HeadingView(headingImage: "map",
+                                headingText: "National Parks")
                     
                     InsetMapView()
                 } //: GROUP
@@ -78,7 +83,8 @@ struct AnimalDetailView: View {
                 
                 // Link
                 Group {
-                    HeadingView(headingImage: "books.vertical", headingText: "Learn More")
+                    HeadingView(headingImage: "books.vertical",
+                                headingText: "Learn More")
                     
                     ExternalWebLinkView(animal: animal)
                 } //: GROUP

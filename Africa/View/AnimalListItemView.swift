@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnimalListItemView: View {
     // MARK: - PROPERTIES
+    
     let animal: Animal
     
     

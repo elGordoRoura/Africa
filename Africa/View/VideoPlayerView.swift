@@ -10,6 +10,7 @@ import AVKit
 
 struct VideoPlayerView: View {
     // MARK: - PROPERTIES
+    
     var videoSelected: String
     var videoTitle: String
     

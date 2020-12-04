@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InsetFactView: View {
     // MARK: - PROPERTIES
+    
     let animal: Animal
     
     

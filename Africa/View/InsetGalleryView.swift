@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InsetGalleryView: View {
     // MARK: - PROPERTIES
+    
     let animal: Animal
     
     

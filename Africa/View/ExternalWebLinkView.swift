@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ExternalWebLinkView: View {
     // MARK: - PROPERTIES
+    
     let animal: Animal
     
     
